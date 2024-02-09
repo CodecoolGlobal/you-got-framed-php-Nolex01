@@ -4,7 +4,7 @@
   "description": "A small MVC micro-framework with PHP",
   "autoload": {
     "psr-4": {
-      "app\\": "./"
+      "app\\": "src/"
     }
   }
 }
