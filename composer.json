@@ -10,6 +10,7 @@
     ]
   },
   "require": {
-    "eftec/bladeone": "^4.11"
+    "eftec/bladeone": "^4.11",
+    "psr/log": "^3.0"
   }
 }
