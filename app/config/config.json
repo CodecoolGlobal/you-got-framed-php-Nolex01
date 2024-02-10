@@ -4,5 +4,10 @@
     "username": "your_username",
     "password": "your_password",
     "database_name": "your_database_name"
-  }
+  },
+  "allowedMethods": {
+    "/": ["GET", "POST"]
+  },
+  "allowedIPs": ["0.0.0.0"],
+  "allowedBrowsers": ["Chrome", "Firefox"]
 }
