@@ -6,18 +6,17 @@ use eftec\bladeone\BladeOne;
 
 $viewsPath = dirname(__DIR__) . '/app/Views';
 $cachePath = dirname(__DIR__) . '/cache';
-
-$blade = new BladeOne($viewsPath,$cachePath);
+$blade = new BladeOne($viewsPath, $cachePath);
 
 $configFile = dirname(__DIR__) . '/app/config/config.json';
 $configJson = file_get_contents($configFile);
 $config = json_decode($configJson, true);
 
-$uri = $_SERVER['REQUEST_URI'];
 $routes = [
     '/' => 'HomeController@index',
 ];
 
+$uri = $_SERVER['REQUEST_URI'];
 if (array_key_exists($uri, $routes)) {
     list($controllerName, $action) = explode('@', $routes[$uri]);
     $controllerName = 'App\\Controllers\\' . $controllerName;
