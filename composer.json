@@ -8,5 +8,8 @@
     "classmap": [
       "app/"
     ]
+  },
+  "require": {
+    "eftec/bladeone": "^4.11"
   }
 }
